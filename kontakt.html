@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Kontakt informacije Peka Orchestra" />
+    <link rel="”canonical”" href="https://peka-orchestra.in.rs/kontakt.html" />
+    <link rel="icon " href="./images/favicon.ico" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Kontakt | Peka Orchestra</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <!-- Logo -->
+        <img src="./images/logo.jpeg" class="logo" />
+        <!-- Hamburger icon -->
+        <input class="side-menu" type="checkbox" id="side-menu" />
+        <label id="button" class="hamb" for="side-menu"
+          ><span class="hamb-line"></span
+        ></label>
+        <!-- Menu -->
+        <nav class="nav">
+          <ul class="menu">
+            <li><a href="/">Početna</a></li>
+            <li><a href="./bio.html">Biografija</a></li>
+            <li><a href="./galerija.html">Galerija</a></li>
+            <li><a href="./kontakt.html">Kontakt</a></li>
+          </ul>
+        </nav>
+      </header>
+      <h2 class="kontakt__h2">
+        Kontaktirajte nas, <b>poziv,viber,email</b> ili na <b>Facebook</b>-u
+        klikom na FB ikonu
+      </h2>
+      <!-- Main content -->
+      <main class="kontakt__items">
+        <div id="phone" class="kontakt__phone">
+          <img class="kontakt__phone--svg" src="images/phone.svg" />
+          <span class="kontakt__phone--text">063 81 222 40</span>
+        </div>
+        <div class="kontakt__viber">
+          <img class="kontakt__viber--svg" src="images/viber.svg" />
+          <span class="kontakt__viber--text">+381 63 81 222 40</span>
+        </div>
+        <div class="kontakt__mail">
+          <img class="kontakt__mail--svg" src="./images/gmail.svg" />
+          <span class="kontakt__mail--text">pekaton100@gmail.com</span>
+        </div>
+        <a
+          href="https://www.facebook.com/pekabrothersorchestra"
+          class="kontakt__fb"
+        >
+          <img class="kontakt__fb--svg" src="./images/facebook.svg" />
+          <span class="kontakt__fb--text">Peka Orchestra</span>
+        </a>
+      </main>
+      <footer class="footer">
+        <p>Copyright Peka Orchestra &copy; 2022</p>
+      </footer>
+    </div>
+    <script type="text/javascript">
+      const button = document.getElementById('button');
+      const svg = document.getElementById('phone');
+      button.addEventListener('click', () => {
+        if (svg.style.display === 'none') {
+          svg.style.display = 'flex';
+        } else {
+          svg.style.display = 'none';
+        }
+      });
+    </script>
+  </body>
+</html>
